@@ -36,3 +36,4 @@ C:\Users\Dell\Source\Repos\RuizFJ\Trabajo_Here\Herencia\PjPoligonos\obj\Debug\ne
 C:\Users\Dell\Source\Repos\RuizFJ\Trabajo_Here\Herencia\PjPoligonos\obj\Debug\net6.0-windows\PjPoligonos.pdb
 C:\Users\Dell\Source\Repos\RuizFJ\Trabajo_Here\Herencia\PjPoligonos\obj\Debug\net6.0-windows\PjPoligonos.genruntimeconfig.cache
 C:\Users\Dell\Source\Repos\RuizFJ\Trabajo_Here\Herencia\PjPoligonos\obj\Debug\net6.0-windows\ref\PjPoligonos.dll
+C:\Users\franc\OneDrive\Documentos\Tarea_He\Herencia\PjPoligonos\obj\Debug\net6.0-windows\PjPoligonos.FigBiTriangulo.resources

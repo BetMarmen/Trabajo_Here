@@ -37,8 +37,6 @@
             txtDiametro = new TextBox();
             txtBase = new TextBox();
             label5 = new Label();
-            label6 = new Label();
-            txtAltura = new TextBox();
             tntCalcular = new Button();
             txtResultado = new TextBox();
             label7 = new Label();
@@ -94,7 +92,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(74, 245);
+            label4.Location = new Point(153, 242);
             label4.Name = "label4";
             label4.Size = new Size(109, 15);
             label4.TabIndex = 5;
@@ -103,7 +101,7 @@
             // txtDiametro
             // 
             txtDiametro.Enabled = false;
-            txtDiametro.Location = new Point(83, 263);
+            txtDiametro.Location = new Point(162, 260);
             txtDiametro.Name = "txtDiametro";
             txtDiametro.Size = new Size(100, 23);
             txtDiametro.TabIndex = 6;
@@ -111,7 +109,7 @@
             // txtBase
             // 
             txtBase.Enabled = false;
-            txtBase.Location = new Point(238, 263);
+            txtBase.Location = new Point(317, 260);
             txtBase.Name = "txtBase";
             txtBase.Size = new Size(100, 23);
             txtBase.TabIndex = 7;
@@ -119,28 +117,11 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(238, 245);
+            label5.Location = new Point(317, 242);
             label5.Name = "label5";
             label5.Size = new Size(84, 15);
             label5.TabIndex = 8;
             label5.Text = "Ingrese la Base";
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Location = new Point(373, 245);
-            label6.Name = "label6";
-            label6.Size = new Size(92, 15);
-            label6.TabIndex = 9;
-            label6.Text = "Ingrese la Altura";
-            // 
-            // txtAltura
-            // 
-            txtAltura.Enabled = false;
-            txtAltura.Location = new Point(371, 263);
-            txtAltura.Name = "txtAltura";
-            txtAltura.Size = new Size(100, 23);
-            txtAltura.TabIndex = 10;
             // 
             // tntCalcular
             // 
@@ -150,6 +131,7 @@
             tntCalcular.TabIndex = 11;
             tntCalcular.Text = "Calcular";
             tntCalcular.UseVisualStyleBackColor = true;
+            tntCalcular.Click += tntCalcular_Click;
             // 
             // txtResultado
             // 
@@ -175,8 +157,6 @@
             Controls.Add(txtResultado);
             Controls.Add(label7);
             Controls.Add(tntCalcular);
-            Controls.Add(txtAltura);
-            Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(txtBase);
             Controls.Add(txtDiametro);
@@ -203,8 +183,6 @@
         private TextBox txtDiametro;
         private TextBox txtBase;
         private Label label5;
-        private Label label6;
-        private TextBox txtAltura;
         private Button tntCalcular;
         private TextBox txtResultado;
         private Label label7;
