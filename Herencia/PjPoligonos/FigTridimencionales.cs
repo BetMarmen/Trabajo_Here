@@ -10,8 +10,11 @@ using System.Windows.Forms;
 
 namespace PjPoligonos
 {
+    
     public partial class FigTridimencionales : Form
     {
+        //Instanciamiento de la clase Figuras Tridimensionales
+        FigurasTridemensionales objA = new();
         public FigTridimencionales()
         {
             InitializeComponent();
@@ -22,37 +25,70 @@ namespace PjPoligonos
 
 
         }
-
-       
-
         private void cboFigura_SelectedIndexChanged_1(object sender, EventArgs e)
         {
-            validarCampos(); 
+            validarCampos();
         }
         private void validarCampos()
         {
             if (cboFigura.SelectedItem.ToString() == "Esfera")
             {
-                txtAltura.Enabled = false;
-                txtBase.Enabled = false;
+
+                txtLado.Enabled = false;
                 txtDiametro.Enabled = true;
                 txtDiametro.Focus();
-                txtAltura.Text = "";
-                txtBase.Text = "";
+
+                txtLado.Text = "";
                 txtDiametro.Text = "";
             }
             else if (cboFigura.SelectedItem.ToString() == "Cubo" || cboFigura
                 .SelectedItem.ToString() == "Tetraedro")
             {
-                txtAltura.Enabled = true;
-                txtBase.Enabled = true;
+
+                txtLado.Enabled = true;
                 txtDiametro.Enabled = false;
-                txtBase.Focus();
-                txtAltura.Text = "";
-                txtBase.Text = "";
+                txtLado.Focus();
+
+                txtLado.Text = "";
                 txtDiametro.Text = "";
 
             }
+        }
+
+        private void tntCalcular_Click(object sender, EventArgs e)
+        {
+            //de acuerdo a lo que eliga el usuario convertimos nuestros atributos definidos con los campos que llena el usuario
+            if (cboFigura.SelectedItem.ToString()=="Esfera")
+            {
+                objA.DiametroEsf=double.Parse(txtDiametro.Text);
+
+            }
+            if (cboFigura.SelectedItem.ToString()=="Cubo")
+            {
+                objA.LadoCubo=double.Parse(txtLado.Text);
+            }
+            if (cboFigura.SelectedItem.ToString()=="Tetraedro")
+            {
+                objA.LadoTetra=double.Parse(txtLado.Text);
+            }
+            //depende de lo que el usuario elija en el combobox se manda a llamr a los metodos 
+            if (cboOpcion.SelectedItem.ToString()=="Área")
+            {
+                //la figura seleccionada que exige el metodo calcular area se traduce a lo que elija el usuario en el combobox
+                txtResultado.Text =objA.CalcularArea(cboFigura.SelectedItem.ToString()).ToString();
+
+            }
+            else if (cboOpcion.SelectedItem.ToString()=="Volumen")
+            {
+                txtResultado.Text= objA.CalcularVolumen(cboFigura.SelectedItem.ToString()).ToString();
+
+
+            }
+        }
+        //al realizar los cambios no me aparecian los cambios, habia que inicializar en el evento de seleccion de figura
+        private void cboFigura_SelectedIndexChanged_2(object sender, EventArgs e)
+        {
+            validarCampos();
         }
     }
 }

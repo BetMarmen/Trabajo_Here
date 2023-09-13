@@ -14,11 +14,8 @@ namespace PjPoligonos
         public double AlturaTri { set; get; }
         public double BaseCuad { set; get; }
         public double AlturaCuad { set; get; }
-
-        public double BaseCubo { set; get; }
-        public double AlturaCubo { set; get; }
-        public double BaseTetra { set; get; }
-        public double AlturaTetra { set; get; }
+        public double LadoCubo { set; get; }
+        public double LadoTetra { set; get; }
 
 
 
