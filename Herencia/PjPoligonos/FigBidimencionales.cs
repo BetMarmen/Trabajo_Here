@@ -27,7 +27,7 @@ namespace PjPoligonos
         }
         private void validarCampos()
         {
-            if (cboFigura.SelectedItem.ToString() == "Circulo" )
+            if (cboFigura.SelectedItem.ToString() == "Circulo")
             {
 
                 txtBase.Enabled = false;
@@ -57,17 +57,17 @@ namespace PjPoligonos
             }
         }
 
-       
 
-      
+
+
 
 
         private void tntCalcular_Click(object sender, EventArgs e)
         {
-         
-         
+
+
             Operaciones();
-          
+
 
         }
 
@@ -78,7 +78,7 @@ namespace PjPoligonos
             {
                 MessageBox.Show("Error, por favor llene todos los campos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-           else if (cboOpcion.SelectedItem.ToString() == "Área" && cboFigura.SelectedItem.ToString() == "Circulo")
+            else if (cboOpcion.SelectedItem.ToString() == "Área" && cboFigura.SelectedItem.ToString() == "Circulo")
             {
                 obj.DiametroCir = Convert.ToDouble(txtDiametro.Text);
                 txtResultado.Text = obj.CalcularArea(cboFigura.SelectedItem.ToString()).ToString();
