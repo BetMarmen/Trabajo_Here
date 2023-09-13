@@ -8,19 +8,24 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Dell\\.nuget\\packages\\": {}
+    "C:\\Users\\franc\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Dell\\Source\\Repos\\RuizFJ\\Trabajo_Here\\Herencia\\PjPoligonos\\PjPoligonos.csproj",
+      "projectUniqueName": "C:\\Users\\franc\\OneDrive\\Documentos\\Tarea_He\\Herencia\\PjPoligonos\\PjPoligonos.csproj",
       "projectName": "PjPoligonos",
-      "projectPath": "C:\\Users\\Dell\\Source\\Repos\\RuizFJ\\Trabajo_Here\\Herencia\\PjPoligonos\\PjPoligonos.csproj",
-      "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Dell\\Source\\Repos\\RuizFJ\\Trabajo_Here\\Herencia\\PjPoligonos\\obj\\",
+      "projectPath": "C:\\Users\\franc\\OneDrive\\Documentos\\Tarea_He\\Herencia\\PjPoligonos\\PjPoligonos.csproj",
+      "packagesPath": "C:\\Users\\franc\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\franc\\OneDrive\\Documentos\\Tarea_He\\Herencia\\PjPoligonos\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\franc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -28,6 +33,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -64,7 +70,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
       }
     }
   }
