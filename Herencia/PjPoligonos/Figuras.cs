@@ -10,15 +10,14 @@ namespace PjPoligonos
     {
         public double DiametroCir { set; get; }
         public double DiametroEsf { set; get; }
-        public double BaseTri { set; get; }
-        public double AlturaTri { set; get; }
-        public double BaseCuad { set; get; }
+        public double Lado1Tri { set; get; }
+        public double Lado2Tri { set; get; }
+        public double Lado3Tri { set; get; }
+       
+        public double LadoCuad { set; get; }
         public double AlturaCuad { set; get; }
-
-        public double BaseCubo { set; get; }
-        public double AlturaCubo { set; get; }
-        public double BaseTetra { set; get; }
-        public double AlturaTetra { set; get; }
+        public double LadoCubo { set; get; }
+        public double LadoTetra { set; get; }
 
 
 

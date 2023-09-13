@@ -17,37 +17,94 @@ namespace PjPoligonos
             InitializeComponent();
         }
 
+        FigurasBidimencionales obj = new FigurasBidimencionales();
 
 
-      
 
         private void cboFigura_SelectedIndexChanged(object sender, EventArgs e)
         {
-           validarCampos();
+            validarCampos();
         }
         private void validarCampos()
         {
             if (cboFigura.SelectedItem.ToString() == "Circulo")
             {
-                txtAltura.Enabled = false;
+
                 txtBase.Enabled = false;
                 txtDiametro.Enabled = true;
                 txtDiametro.Focus();
-                txtAltura.Text = "";
+
                 txtBase.Text = "";
                 txtDiametro.Text = "";
             }
-            else if (cboFigura.SelectedItem.ToString() == "Cuadrado" || cboFigura
-                .SelectedItem.ToString() == "Triángulo")
+            else if (cboFigura.SelectedItem.ToString() == "Cuadrado")
             {
-                txtAltura.Text = "";
+
                 txtBase.Text = "";
                 txtDiametro.Text = "";
-                txtAltura.Enabled = true;
+
                 txtBase.Enabled = true;
                 txtDiametro.Enabled = false;
                 txtBase.Focus();
 
+            }
+            else if (cboFigura.SelectedItem.ToString() == "Triángulo")
+            {
+                FigBiTriangulo figBiTriangulo = new FigBiTriangulo();
+                figBiTriangulo.ShowDialog();
+                txtBase.Enabled = false;
+
+            }
+        }
+
+
+
+
+
+
+        private void tntCalcular_Click(object sender, EventArgs e)
+        {
+
+
+            Operaciones();
+
+
+        }
+
+        public void Operaciones()
+        {
+
+            if (cboOpcion.SelectedItem == null || String.IsNullOrWhiteSpace(txtDiametro.Text) && String.IsNullOrWhiteSpace(txtBase.Text))
+            {
+                MessageBox.Show("Error, por favor llene todos los campos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (cboOpcion.SelectedItem.ToString() == "Área" && cboFigura.SelectedItem.ToString() == "Circulo")
+            {
+                obj.DiametroCir = Convert.ToDouble(txtDiametro.Text);
+                txtResultado.Text = obj.CalcularArea(cboFigura.SelectedItem.ToString()).ToString();
+
+            }
+            else if (cboOpcion.SelectedItem.ToString() == "Área" && cboFigura.SelectedItem.ToString() == "Cuadrado")
+            {
+                obj.LadoCuad = Convert.ToDouble(txtBase.Text);
+                txtResultado.Text = obj.CalcularArea(cboFigura.SelectedItem.ToString()).ToString();
+
+            }
+            else if (cboOpcion.SelectedItem.ToString() == "Perímetro" && cboFigura.SelectedItem.ToString() == "Circulo")
+            {
+                obj.DiametroCir = Convert.ToDouble(txtDiametro.Text);
+                txtResultado.Text = obj.CalcularPerimetro(cboFigura.SelectedItem.ToString()).ToString();
+
+            }
+            else if (cboOpcion.SelectedItem.ToString() == "Perímetro" && cboFigura.SelectedItem.ToString() == "Cuadrado")
+            {
+                obj.LadoCuad = Convert.ToDouble(txtBase.Text);
+                txtResultado.Text = obj.CalcularPerimetro(cboFigura.SelectedItem.ToString()).ToString();
+
+            }
+            else
+            {
+                MessageBox.Show("Error seleccione que desea calcular");
             }
         }
     }

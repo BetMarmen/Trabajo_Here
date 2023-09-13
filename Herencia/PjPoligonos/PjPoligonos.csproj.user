@@ -4,6 +4,9 @@
     <Compile Update="FigBidimencionales.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FigBiTriangulo.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FigTridimencionales.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -29,10 +29,8 @@
         private void InitializeComponent()
         {
             tntCalcular = new Button();
-            txtAltura = new TextBox();
-            label6 = new Label();
             label5 = new Label();
-            txtBase = new TextBox();
+            txtLado = new TextBox();
             txtDiametro = new TextBox();
             label4 = new Label();
             label3 = new Label();
@@ -52,45 +50,29 @@
             tntCalcular.TabIndex = 23;
             tntCalcular.Text = "Calcular";
             tntCalcular.UseVisualStyleBackColor = true;
-            // 
-            // txtAltura
-            // 
-            txtAltura.Enabled = false;
-            txtAltura.Location = new Point(384, 265);
-            txtAltura.Name = "txtAltura";
-            txtAltura.Size = new Size(100, 23);
-            txtAltura.TabIndex = 22;
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Location = new Point(386, 247);
-            label6.Name = "label6";
-            label6.Size = new Size(92, 15);
-            label6.TabIndex = 21;
-            label6.Text = "Ingrese la Altura";
+            tntCalcular.Click += tntCalcular_Click;
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(251, 247);
+            label5.Location = new Point(320, 248);
             label5.Name = "label5";
-            label5.Size = new Size(84, 15);
+            label5.Size = new Size(86, 15);
             label5.TabIndex = 20;
-            label5.Text = "Ingrese la Base";
+            label5.Text = "Ingrese el Lado";
             // 
-            // txtBase
+            // txtLado
             // 
-            txtBase.Enabled = false;
-            txtBase.Location = new Point(251, 265);
-            txtBase.Name = "txtBase";
-            txtBase.Size = new Size(100, 23);
-            txtBase.TabIndex = 19;
+            txtLado.Enabled = false;
+            txtLado.Location = new Point(320, 266);
+            txtLado.Name = "txtLado";
+            txtLado.Size = new Size(100, 23);
+            txtLado.TabIndex = 19;
             // 
             // txtDiametro
             // 
             txtDiametro.Enabled = false;
-            txtDiametro.Location = new Point(96, 265);
+            txtDiametro.Location = new Point(165, 266);
             txtDiametro.Name = "txtDiametro";
             txtDiametro.Size = new Size(100, 23);
             txtDiametro.TabIndex = 18;
@@ -98,7 +80,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(87, 247);
+            label4.Location = new Point(156, 248);
             label4.Name = "label4";
             label4.Size = new Size(109, 15);
             label4.TabIndex = 17;
@@ -140,7 +122,7 @@
             cboFigura.Name = "cboFigura";
             cboFigura.Size = new Size(121, 23);
             cboFigura.TabIndex = 13;
-            cboFigura.SelectedIndexChanged += cboFigura_SelectedIndexChanged_1;
+            cboFigura.SelectedIndexChanged += cboFigura_SelectedIndexChanged_2;
             // 
             // cboOpcion
             // 
@@ -162,6 +144,7 @@
             // 
             // txtResultado
             // 
+            txtResultado.Enabled = false;
             txtResultado.Location = new Point(200, 342);
             txtResultado.Name = "txtResultado";
             txtResultado.Size = new Size(175, 23);
@@ -175,10 +158,8 @@
             Controls.Add(txtResultado);
             Controls.Add(label7);
             Controls.Add(tntCalcular);
-            Controls.Add(txtAltura);
-            Controls.Add(label6);
             Controls.Add(label5);
-            Controls.Add(txtBase);
+            Controls.Add(txtLado);
             Controls.Add(txtDiametro);
             Controls.Add(label4);
             Controls.Add(label3);
@@ -195,10 +176,8 @@
         #endregion
 
         private Button tntCalcular;
-        private TextBox txtAltura;
-        private Label label6;
         private Label label5;
-        private TextBox txtBase;
+        private TextBox txtLado;
         private TextBox txtDiametro;
         private Label label4;
         private Label label3;
