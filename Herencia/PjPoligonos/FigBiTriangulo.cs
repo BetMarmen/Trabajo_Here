@@ -22,7 +22,7 @@ namespace PjPoligonos
         {
 
             RealizarCalculos();
-           
+
         }
         private void RealizarCalculos()
         {

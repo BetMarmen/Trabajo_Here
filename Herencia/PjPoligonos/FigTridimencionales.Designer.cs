@@ -144,6 +144,7 @@
             // 
             // txtResultado
             // 
+            txtResultado.Enabled = false;
             txtResultado.Location = new Point(200, 342);
             txtResultado.Name = "txtResultado";
             txtResultado.Size = new Size(175, 23);

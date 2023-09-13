@@ -71,12 +71,12 @@ namespace PjPoligonos
             {
                 MessageBox.Show("Error, por favor llene todos los campos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-           
-             else if (cboFigura.SelectedItem.ToString() == "Esfera")
-             {
+
+            else if (cboFigura.SelectedItem.ToString() == "Esfera")
+            {
                 objA.DiametroEsf = double.Parse(txtDiametro.Text);
 
-             }
+            }
             else if (cboFigura.SelectedItem.ToString() == "Cubo")
             {
                 objA.LadoCubo = double.Parse(txtLado.Text);
@@ -85,10 +85,10 @@ namespace PjPoligonos
             {
                 objA.LadoTetra = double.Parse(txtLado.Text);
             }
-             
-             else if (cboOpcion.SelectedItem.ToString() == "Área")
+
+            else if (cboOpcion.SelectedItem.ToString() == "Área")
             {
-               
+
                 txtResultado.Text = objA.CalcularArea(cboFigura.SelectedItem.ToString()).ToString();
 
             }
