@@ -107,5 +107,10 @@ namespace PjPoligonos
                 MessageBox.Show("Error seleccione que desea calcular");
             }
         }
+
+        private void FigBidimencionales_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

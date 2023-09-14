@@ -44,117 +44,136 @@
             // 
             // tntCalcular
             // 
-            tntCalcular.Location = new Point(260, 188);
+            tntCalcular.BackColor = Color.FromArgb(255, 192, 192);
+            tntCalcular.Font = new Font("SimSun", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            tntCalcular.Location = new Point(261, 184);
+            tntCalcular.Margin = new Padding(3, 4, 3, 4);
             tntCalcular.Name = "tntCalcular";
-            tntCalcular.Size = new Size(75, 23);
+            tntCalcular.Size = new Size(126, 44);
             tntCalcular.TabIndex = 23;
             tntCalcular.Text = "Calcular";
-            tntCalcular.UseVisualStyleBackColor = true;
+            tntCalcular.UseVisualStyleBackColor = false;
             tntCalcular.Click += tntCalcular_Click;
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(320, 248);
+            label5.Font = new Font("SimSun", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.Location = new Point(423, 258);
             label5.Name = "label5";
-            label5.Size = new Size(86, 15);
+            label5.Size = new Size(174, 20);
             label5.TabIndex = 20;
             label5.Text = "Ingrese el Lado";
             // 
             // txtLado
             // 
             txtLado.Enabled = false;
-            txtLado.Location = new Point(320, 266);
+            txtLado.Font = new Font("SimSun", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            txtLado.Location = new Point(447, 287);
+            txtLado.Margin = new Padding(3, 4, 3, 4);
             txtLado.Name = "txtLado";
-            txtLado.Size = new Size(100, 23);
+            txtLado.Size = new Size(114, 30);
             txtLado.TabIndex = 19;
             // 
             // txtDiametro
             // 
             txtDiametro.Enabled = false;
-            txtDiametro.Location = new Point(165, 266);
+            txtDiametro.Font = new Font("SimSun", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            txtDiametro.Location = new Point(88, 287);
+            txtDiametro.Margin = new Padding(3, 4, 3, 4);
             txtDiametro.Name = "txtDiametro";
-            txtDiametro.Size = new Size(100, 23);
+            txtDiametro.Size = new Size(114, 30);
             txtDiametro.TabIndex = 18;
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(156, 248);
+            label4.Font = new Font("SimSun", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.Location = new Point(42, 258);
             label4.Name = "label4";
-            label4.Size = new Size(109, 15);
+            label4.Size = new Size(218, 20);
             label4.TabIndex = 17;
             label4.Text = "Ingrese el Diametro";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(364, 123);
+            label3.Font = new Font("SimSun", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.Location = new Point(389, 113);
             label3.Name = "label3";
-            label3.Size = new Size(120, 15);
+            label3.Size = new Size(240, 20);
             label3.TabIndex = 16;
             label3.Text = "Seleccione una figura";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(70, 123);
+            label2.Font = new Font("SimSun", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.Location = new Point(50, 113);
             label2.Name = "label2";
-            label2.Size = new Size(119, 15);
+            label2.Size = new Size(229, 20);
             label2.TabIndex = 15;
             label2.Text = "¿Qué Desea Calcular?";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label1.Location = new Point(188, 81);
+            label1.Font = new Font("Tw Cen MT Condensed", 24F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(189, 19);
             label1.Name = "label1";
-            label1.Size = new Size(206, 25);
+            label1.Size = new Size(325, 47);
             label1.TabIndex = 14;
             label1.Text = "Seleccione una Opción";
             // 
             // cboFigura
             // 
+            cboFigura.Font = new Font("SimSun", 12F, FontStyle.Bold, GraphicsUnit.Point);
             cboFigura.FormattingEnabled = true;
             cboFigura.Items.AddRange(new object[] { "Esfera", "Cubo", "Tetraedro" });
-            cboFigura.Location = new Point(363, 141);
+            cboFigura.Location = new Point(423, 142);
+            cboFigura.Margin = new Padding(3, 4, 3, 4);
             cboFigura.Name = "cboFigura";
-            cboFigura.Size = new Size(121, 23);
+            cboFigura.Size = new Size(138, 28);
             cboFigura.TabIndex = 13;
             cboFigura.SelectedIndexChanged += cboFigura_SelectedIndexChanged_2;
             // 
             // cboOpcion
             // 
+            cboOpcion.Font = new Font("SimSun", 12F, FontStyle.Bold, GraphicsUnit.Point);
             cboOpcion.FormattingEnabled = true;
             cboOpcion.Items.AddRange(new object[] { "Área", "Volumen" });
-            cboOpcion.Location = new Point(70, 141);
+            cboOpcion.Location = new Point(88, 142);
+            cboOpcion.Margin = new Padding(3, 4, 3, 4);
             cboOpcion.Name = "cboOpcion";
-            cboOpcion.Size = new Size(121, 23);
+            cboOpcion.Size = new Size(138, 28);
             cboOpcion.TabIndex = 12;
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(251, 324);
+            label7.Font = new Font("SimSun", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label7.Location = new Point(261, 356);
             label7.Name = "label7";
-            label7.Size = new Size(59, 15);
+            label7.Size = new Size(108, 20);
             label7.TabIndex = 24;
             label7.Text = "Resultado";
             // 
             // txtResultado
             // 
             txtResultado.Enabled = false;
-            txtResultado.Location = new Point(200, 342);
+            txtResultado.Font = new Font("SimSun", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            txtResultado.Location = new Point(209, 385);
+            txtResultado.Margin = new Padding(3, 4, 3, 4);
             txtResultado.Name = "txtResultado";
-            txtResultado.Size = new Size(175, 23);
+            txtResultado.Size = new Size(199, 30);
             txtResultado.TabIndex = 25;
             // 
             // FigTridimencionales
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(597, 450);
+            BackColor = Color.FromArgb(255, 224, 192);
+            ClientSize = new Size(641, 478);
             Controls.Add(txtResultado);
             Controls.Add(label7);
             Controls.Add(tntCalcular);
@@ -167,6 +186,7 @@
             Controls.Add(label1);
             Controls.Add(cboFigura);
             Controls.Add(cboOpcion);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "FigTridimencionales";
             Text = "FigTridimencionales";
             ResumeLayout(false);
